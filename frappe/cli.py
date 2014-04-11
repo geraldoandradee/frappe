@@ -805,7 +805,7 @@ def get_site_status(verbose=False):
 		ret[key] = frappe.db.get_default(key)
 
 	# basic usage/progress analytics
-	for doctype in ("Company", "Customer", "Item", "Quotation", "Sales Invoice",
+	for doctype in ("Company", "Item", "Quotation", "Sales Invoice",
 		"Journal Voucher", "Stock Ledger Entry"):
 			key = doctype.lower().replace(" ", "_") + "_exists"
 			ret[key] = 1 if frappe.db.count(doctype) else 0

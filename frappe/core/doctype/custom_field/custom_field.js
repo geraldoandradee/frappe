@@ -1,5 +1,5 @@
 // Copyright (c) 2013, Web Notes Technologies Pvt. Ltd. and Contributors
-// MIT License. See license.txt 
+// MIT License. See license.txt
 
 //168
 // Refresh
@@ -47,8 +47,8 @@ cur_frm.fields_dict['dt'].get_query = function(doc, dt, dn) {
 }
 
 cur_frm.cscript.fieldtype = function(doc, dt, dn) {
-	if(doc.fieldtype == 'Link') cur_frm.fields_dict['options_help'].disp_area.innerHTML = 'Please enter name of the document you want this field to be linked to in <b>Options</b>.<br> Eg.: Customer';
-	else if(doc.fieldtype == 'Select') cur_frm.fields_dict['options_help'].disp_area.innerHTML = 'Please enter values in <b>Options</b> separated by enter. <br>Eg.: <b>Field:</b> Country <br><b>Options:</b><br>China<br>India<br>United States<br><br><b> OR </b><br>You can also link it to existing Documents.<br>Eg.: <b>link:</b>Customer';
+	if(doc.fieldtype == 'Link') cur_frm.fields_dict['options_help'].disp_area.innerHTML = 'Please enter name of the document you want this field to be linked to in <b>Options</b>.<br> Eg.: Party';
+	else if(doc.fieldtype == 'Select') cur_frm.fields_dict['options_help'].disp_area.innerHTML = 'Please enter values in <b>Options</b> separated by enter. <br>Eg.: <b>Field:</b> Country <br><b>Options:</b><br>China<br>India<br>United States<br><br><b> OR </b><br>You can also link it to existing Documents.<br>Eg.: <b>link:</b>Party';
 	else cur_frm.fields_dict['options_help'].disp_area.innerHTML = '';
 }
 
